@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Project</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts\bootstrap-icons\bootstrap-icons.css">
+    <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container navigation">
+            <a href="#" class="navbar-brand"></i>PLUMBING HQ</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#appointment">APPOINTMENT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Area For Phone Number and Email Link... In Progress-->
+    <div class="bg-primary contact p-1 text-center">
+        <div class="container d-lg-flex align-items-center justify-content-between">
+            <p><span class="text-dark">Got a Plumbing Emergency? </span><a class="text-light" href="tel:08138143732"> Call us now: <i class="bi bi-telephone"></i>+234-813-814-3732</a></p>
+            <p><a class="text-light" href="mailto:adekoyaadedire@gmail.com"><i class="bi bi-envelope"></i> adekoyaadedire@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- Carousel with Copy/Showcase -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img\Carousel1.jpg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption-text d-none d-md-block">
+                <h3 class="bg-primary">Second slide label</h3>
+                <p class="bg-light text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi est ipsa cum illum et similique, vero non ex distinctio animi in impedit quae, eum iure?</p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="img\Carousel2.jpg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="img\Carousel3.jpg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- First Copy -->
+    <section class="bg-dark text-light p-5 p-lg-4 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>PLUMBING PROBLEM?<br><span class="text-warning">We can help you!</span></h1>
+                    <p class="lead my-4">Professional Plumbing, Leak and Heating Services.</p>
+                    <p class="lead">Whether you’re planning a renovation or simply need routine maintenance on your home or office plumbing systems, our professional technicians and mechanics can assist you effectively in the right way.</p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointment">BOOK AN APPOINTMENT</button>
+                </div>
+                  <img class="img-fluid w-50 d-none d-sm-block" src="img/copy1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Request a Quote -->
+    <section class="bg-primary text-light p-5" id="services">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <h3 class="mb-3 mb-md-0">Request a Quote</h3>
+
+                <div class="input-group quote-input">
+                    <input type="email" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-dark btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#quote">Get Quote</button>
+                </div>
+                  
+            </div>
+        </div>
+    </section>
+
+      <!-- Our Services -->
+      <section class="p-5">
+          <div class="container">
+              <div>
+                  <h2 class="text-center mb-4">Our <span class="text-primary">Services</span></h2>
+                  <p class="lead text-center text-dark mb-5">What Can We Help You With Today?</p>
+              </div>
+              <div class="row text-center py-4 g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                          <h3 class="card-title mb-3"><a href="services.html" class="text-dark">Residential Services</a></h3>
+                          <p class="card-text">Anyone who owns a home understands that plumbing issues can never be foreseen 100%…</p>
+                          <a href="services.html" class="btn btn-primary">SEE PRICING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                          <h3 class="card-title mb-3"><a href="services.html" class="text-dark">Commercial Services</a></h3>
+                          <p class="card-text">No job is too large for us! Commercial properties need professional plumbers in any case…</p>
+                          <a href="services.html" class="btn btn-primary">SEE PRICING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img src="img/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                          <h3 class="card-title mb-3"><a href="services.html" class="text-dark">Plumber Repair Works</a></h3>
+                          <p class="card-text">Toilet Installation. Sink Installation. Tankless Water Heater Installation. Garbage Disposal Installation…</p>
+                          <a href="services.html" class="btn btn-primary">SEE PRICING</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Second Copy -->
+      <section class="p-5">
+          <div class="container">
+              <div class="row align-items-center justify-content-between">
+                  <div class="col-md">
+                      <img src="img/copy2.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md p-5">
+                      <h2>Anything You Might Need From Our Plumbing Specialists</h2>
+                      <p class="lead">We offer plumbing services and solutions for every type of issue – from common clogs to a full mainline replacement.</p>
+                      <p class="lead">Free estimates are provided for work that would be more involved than a service call. Remodeling, replacing water or sewer lines, replacing fixtures, etc.</p>
+                      <a href="#" class="btn btn-lg btn-dark md-3 custom-button" data-bs-toggle="modal" data-bs-target="#quote">
+                          <i class="bi bi-chevron-right">REQUEST AN ESTIMATE</i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Third Copy -->
+      <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Elite Plumbing Services <br><span class="text-primary">For Home Owners And Businesses</span></h2>
+                    <p class="lead">Professional plumbing services are combined with reasonable prices. While certain plumbing issues, such as a minor toilet clog, can be quickly addressed with do-it-yourself methods, most plumbing problems require the assistance of a professional.</p>
+                    <p class="lead">Our team proudly offers an on-time guarantee and a 100% customer satisfaction guarantee. It’s why we make sure that our licensed plumbers are highly trained and fully equipped to meet your home’s diverse
+                        plumbing service needs.</p>
+                    <a href="contact.html" class="btn btn-lg btn-light md-3 custom-button">
+                        <i class="bi bi-chevron-right">CONTACT US</i>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/banner1.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="p-5" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion accordion-flush" id="questions">
+
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  How much do you charge?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    How much do you charge?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    How much do you charge?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                  How much do you charge?
+                </button>
+              </h2>
+              <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    How much do you charge?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+
+            <div class="row text-center py-5 g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop text-light"></i>
+                            </div>
+                            <h3 class="card-title mb-3"><a href="services.html" class="text-light">Maintenance</a></h3>
+                            <p class="card-text">Garage Door Repair. Carpentry. Termite Damage Repairs. Tub and shower caulking. Doors. Fences. Weatherproofing…</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quote">GET A QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-tools text-light"></i>
+                            </div>
+                            <h3 class="card-title mb-3"><a href="services.html" class="text-light">Installation</a></h3>
+                            <p class="card-text">Leaks Repair. Faucet Installation. Toilet Repair/Replacement. Faucet Leaks. Shut Off Valves. Kitchens. Toilet Repairs…</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#quote">GET A QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people text-light"></i>
+                            </div>
+                            <h3 class="card-title mb-3"><a href="services.html" class="text-light">Pipes</a></h3>
+                            <p class="card-text">We help you select the best plumbing pipes for your house or business. It matters which to choose for plumbing security.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quote">GET A QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+      <!-- Our Team -->
+      <section class="p-5 bg-primary">
+          <div class="container">
+              <h2 class="text-center text-white">Our Professional Team</h2>
+              <p class="lead text-center text-white mb-5">Professional Plumbing, Leak and Heating Services</p>
+              <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                      <div class="card bg-light">
+                          <div class="card-body text-center">
+                              <img src="img\person1.jpg" class="rounded-circle mb-3" alt="">
+                              <h3 class="card-title mb-3">John Doe</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo, doloribus perferendis esse delectus minus.</p>
+                              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img\person2.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Jane Doe</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo, doloribus perferendis esse delectus minus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img\person3.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Wally West</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo, doloribus perferendis esse delectus minus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img\person4.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Michelle Obama</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo, doloribus perferendis esse delectus minus.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                          </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="p-5">
+        <div class="container">
+            <div>
+                <h2 class="text-center mb-4">Why Choose <span class="text-primary">Us?</span></h2>
+                <p class="lead text-center text-dark mb-5">Expect The Best With Our Service</p>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md p-5">
+                    <h2>Quality Plumbing Services From a Team of Professionals</h2>
+                    <p class="lead">Our goal is to provide our customers with highly professional plumbing services. We pride ourselves on our reliable and friendly service that customers can trust. Our expert team are on call 24/7 for any plumbing emergency.</p>
+                    <p class="lead">We’re committed to providing fast, affordable, reliable, worry free plumbing and heating services.</p>
+                            <a href="services.html" class="btn btn-lg btn-primary md-3 custom-button">
+                                <i class="bi bi-chevron-right">OUR SERVICES</i>
+                            </a>
+                </div>
+                <div class="col-md">
+                    <div class="row text-center g-4">
+                        <div class="col-md-6">
+                            <div class="card bg-dark text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="bi bi-laptop text-light"></i>
+                                    </div>
+                                    <h3 class="card-title mb-3"><a href="about.html" class="text-light">Experienced Team</a></h3>
+                                    <p class="card-text">Most of the employees have a great experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-secondary text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="bi bi-laptop text-light"></i>
+                                    </div>
+                                    <h3 class="card-title mb-3"><a href="about.html" class="text-light">Quality Everytime</a></h3>
+                                    <p class="card-text">We warranty reliable service with every job!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-secondary text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="bi bi-tools text-light"></i>
+                                    </div>
+                                    <h3 class="card-title mb-3"><a href="about.html" class="text-light">Fully Licensed</a></h3>
+                                    <p class="card-text">All of our technicians are fully licensed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-dark text-light">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <i class="bi bi-laptop text-light"></i>
+                                    </div>
+                                    <h3 class="card-title mb-3"><a href="about.html" class="text-light">Friendly Experts</a></h3>
+                                    <p class="card-text">We employ most courteous professionals.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="p-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h2 class="mb-4 text-center">Testimonials</h2>
+            <p class="lead text-center text-dark mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+              numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+              quisquam eum porro a pariatur veniam.
+            </p>
+          </div>
+        </div>
+      
+        <div class="row text-center">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="/img/img (1).webp"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">Maria Smantha</h5>
+            <h6 class="text-primary mb-3">Web Developer</h6>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>I would highly recommend Jeff to do your plumbing. He did an excellent job fixing my whole house filter. He was very professional and did quality work. He is very reasonable in price. If I have any more plumbing issues I will be calling Jeff to do the work. You can't go wrong with him.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="/img/img (2).webp"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">Lisa Cudrow</h5>
+            <h6 class="text-primary mb-3">Graphic Designer</h6>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>Would recommend him to anyone. Had a leak in bathroom sink, he replaced the drain. Very reasonable prices. Thanks I’ll definitely be a repeat customer for my plumbing needs!
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="/img/img (9).webp"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">John Smith</h5>
+            <h6 class="text-primary mb-3">Marketing Specialist</h6>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>I trust this business based solely on the fact that they were upfront with me about charging overtime on weekends and gave me the option to call them later in the week or call someone else entirely. There are not many places left that will do all they can to help people even if it means they might not make that sale. The man I spoke to was exceptionally helpful, explained what he could to me over the phone, and seemed genuinely concerned for my situation.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="far fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Map
+      <section class="p-5">
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md">
+                      <h2 class="text-center mb-4">Contact Info</h2>
+                      <ul class="list-group list-group-flush lead">
+                          <li class="list-group-item">
+                              <span class="fw-bold">Location:</span> 50, Main Block, Tennessee.
+                          </li>
+                          <li class="list-group-item">
+                            <span class="fw-bold">Phone Number:</span> +234-813-814-3732
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> adekoyaadedire@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Lorem Ipsum:</span> Lorem ipsum dolor sit.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Country:</span> West Africa, Nigeria.
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="col-md justify-content-center">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                  </div>
+              </div>
+          </div>
+      </section> -->
+      
+
+      <!-- Recent Projects -->
+
+      <!-- Main Footer -->
+    <section class="p-5 bg-black text-center text-white">
+        <div class="container main-footer">
+            <div class="row justify-content-between">
+                <div class="col-md">
+                    <h4 class="mb-4">About</h4>
+                    <h2>PLUMBING</h2>
+                    <div>
+                        <p class="mb-1"><i class="bi bi-geo-alt"></i> 1314 Kingston Highway
+                            Kingston, TN 37763
+                            USA</p>
+                        <p class="mb-1"><i class="bi bi-telephone"></i><a href="tel:08138143732"> +234-813-814-3732</a></p>
+                        <p class="mb-1"><i class="bi bi-envelope"></i><a href="mailto:adekoyaadedire@gmail.com"> adekoyaadedire@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <h4 class="mb-4">Quick Links</h4>
+                    <p class="mb-1"><a href="services.html">All Services</a></p>
+                    <p class="mb-1"><a href="#" data-bs-toggle="modal" data-bs-target="#appointment">Appointment</a></p>
+                    <p class="mb-1"><a href="contact.html">Contact Us</a></p>
+                    <p class="mb-1"><a href="#services">Plumbing Services</a></p>
+                    <p class="mb-1"><a href="/about.html">About Us</a></p>
+                    <!-- <p class="mb-1"><a href="#">Plumbing Services</a></p> -->
+            </div>
+                <div class="col-md">
+                    <h4 class="mb-4">Services</h4>
+                    <p class="mb-1"><a href="/services.html">Sewer Repair and Cleaning</a></p>
+                    <p class="mb-1"><a href="/services.html">Faucet and Leak Repairs</a></p>
+                    <p class="mb-1"><a href="/services.html">Remodelling Service</a></p>
+                    <p class="mb-1"><a href="/services.html">Plumbing Services</a></p>
+                    <p class="mb-1"><a href="/services.html">Drain Cleaning and Repairs</a></p>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer 2 -->
+    <section class="p-2 bg-dark text-center text-white position-relative">
+          <div class="container d-lg-flex align-items-center justify-content-between">
+            <div class="py-2">
+                <span class="px-4"><a href="#"><i class="bi bi-facebook text-light"></i></a></span>
+                <span class="px-4"><a href="#"><i class="bi bi-twitter text-light"></i></a></span>
+                <span class="px-4"><a href="#"><i class="bi bi-instagram text-light"></i></a></span>
+            </div>
+            <p class="text-light fw-bold">
+                <span class="text-primary">Adekoya Adedire</span> &copy;2022. All Rights Reserved.
+            </p>
+
+            <a href="#" class="position-absolute bottom-2 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h2"></i>
+            </a>
+          </div>
+      </section>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="appointmentLabel">Book Appointment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                    <label for="name">Name</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                    <label for="emailAddress">Email Address</label>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="phoneNumber" type="text" placeholder="Phone Number" data-sb-validations="required" />
+                    <label for="phoneNumber">Phone Number</label>
+                    <div class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="services" aria-label="Services">
+                        <option value="Leaky Faucet Repair">Leaky Faucet Repair</option>
+                        <option value="Hot Water Switch">Hot Water Switch</option>
+                        <option value="Residential Services">Residential Services</option>
+                        <option value="Sewer Repair and Cleaning">Sewer Repair and Cleaning</option>
+                        <option value="Remodelling Services">Remodelling Services</option>
+                        <option value="Drain Cleaning and Repairs">Drain Cleaning and Repairs</option>
+                    </select>
+                    <label for="service">Service</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="messageOptional" type="text" placeholder="Message (Optional)" style="height: 10rem;" data-sb-validations=""></textarea>
+                    <label for="messageOptional">Message</label>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal 2 -->
+   <div class="modal fade" id="quote" tabindex="-1" aria-labelledby="quoteLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="quoteLabel">Request Free Estimate/Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                    <label for="name">Name</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                    <label for="emailAddress">Email Address</label>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="phoneNumber" type="text" placeholder="Phone Number" data-sb-validations="required" />
+                    <label for="phoneNumber">Phone Number</label>
+                    <div class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="I was wondering about avalability and rates. I need help with the following:" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <label for="message">I need help with the following:</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">What service do you need help with? (required)</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="vendor\bootstrap\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>

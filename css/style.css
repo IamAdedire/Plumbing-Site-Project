@@ -1,0 +1,31 @@
+body::before {
+    display: block;
+    content: "";
+    height: 80px;
+}
+a {
+    text-decoration: none;
+}
+.contact {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.rem;
+}
+.contact a {
+    text-decoration: none;
+}
+.contact a:hover {
+    color: rgb(206, 199, 199);
+    font-weight: 800;
+}
+@media (min-width: 768px) {
+    .quote-input {
+        width: 60%;
+    }
+}
+.custom-button:hover {
+    font-weight: bold;
+}
+a:hover {
+    font-weight: bold;
+}
