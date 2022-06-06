@@ -26,7 +26,7 @@
                         <a href="index.html" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">SERVICES</a>
+                        <a href="#services" class="nav-link">SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a href="faq.html" class="nav-link">FAQ</a>
@@ -50,155 +50,110 @@
         </div>
     </div>
 
-
-    <!-- Contact Form -->
-    <section class="p-5">
+    <!-- FAQ -->
+    <section class="p-5" id="faq">
         <div class="container">
-            <div>
-                <h2 class="text-center mb-4">Get In <span class="text-primary">Touch</span></h2>
-                <p class="lead text-center text-dark mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion accordion-flush" id="questions">
+
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  How much do you charge?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+              </div>
             </div>
-            <div class="row align-items-center justify-content-between">
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    Where are you located?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    What are your hours?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                  What services do you offer?
+                </button>
+              </h2>
+              <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    Can you tell me more about your business?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aliquam aspernatur sunt atque laboriosam dolorum accusamus ut aliquid fugiat odit illo voluptates minus, eum adipisci, dolorem at, deserunt quos dolore harum eligendi libero rem laborum! Facere tempora corporis dolorem culpa?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Main Footer -->
+      <section class="p-5 bg-black text-center text-white">
+        <div class="container main-footer">
+            <div class="row justify-content-between">
                 <div class="col-md">
-                    <div class="container px-5 my-5">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                                <label for="name">Name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                <label for="emailAddress">Email Address</label>
-                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="subject" type="text" placeholder="Subject" data-sb-validations="required" />
-                                <label for="subject">Subject</label>
-                                <div class="invalid-feedback" data-sb-feedback="subject:required">Subject is required.</div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                            </div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-                            </div>
-                        </form>
+                    <h4 class="mb-4">About</h4>
+                    <h2>PLUMBING</h2>
+                    <div>
+                        <p class="mb-1"><i class="bi bi-geo-alt"></i> 1314 Kingston Highway
+                            Kingston, TN 37763
+                            USA</p>
+                        <p class="mb-1"><i class="bi bi-telephone"></i><a href="tel:08138143732"> +234-813-814-3732</a></p>
+                        <p class="mb-1"><i class="bi bi-envelope"></i><a href="mailto:adekoyaadedire@gmail.com"> adekoyaadedire@gmail.com</a></p>
                     </div>
-                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
                 </div>
-                <div class="col-md p-5">
-                    <h2>Emergency Plumbing?</h2>
-                    <p class="lead">We’re open 24/7/365 because plumbing emergencies don’t wait.</p>
-                    <p class="lead fw-bolder">CALL US NOW ON</p>
-                    <a href="tel:08138143732" class="btn btn-lg btn-primary md-3 custom-button">
-                        <i class="bi bi-telephone"> +234-813-814-3732</i>
-                    </a>
-                    <!-- <h2>Plumbing Maintenance?</h2>
-                    <p class="lead mt-3">Do you have a leaky faucet or clogged drain? <span class="fw-bolder lead">Email us For Fixing</p></span>
-                    <p class="lead fw-bolder">CALL US NOW ON</p>
-                    <a href="mailto:adekoyaadedire@gmail.com" class="btn btn-lg btn-primary md-3 custom-button">
-                        <i class="bi bi-envelope"> adekoyaadedire@gmail.com</i>
-                    </a> -->
-                </div>
+                <div class="col-md">
+                    <h4 class="mb-4">Quick Links</h4>
+                    <p class="mb-1"><a href="services.html">All Services</a></p>
+                    <p class="mb-1"><a href="#" data-bs-toggle="modal" data-bs-target="#appointment">Appointment</a></p>
+                    <p class="mb-1"><a href="contact.html">Contact Us</a></p>
+                    <p class="mb-1"><a href="#services">Plumbing Services</a></p>
+                    <p class="mb-1"><a href="about.html">About Us</a></p>
+                    <!-- <p class="mb-1"><a href="#">Plumbing Services</a></p> -->
+            </div>
+                <div class="col-md">
+                    <h4 class="mb-4">Services</h4>
+                    <p class="mb-1"><a href="services.html">Sewer Repair and Cleaning</a></p>
+                    <p class="mb-1"><a href="services.html">Faucet and Leak Repairs</a></p>
+                    <p class="mb-1"><a href="services.html">Remodelling Service</a></p>
+                    <p class="mb-1"><a href="services.html">Plumbing Services</a></p>
+                    <p class="mb-1"><a href="services.html">Drain Cleaning and Repairs</a></p>
             </div>
         </div>
     </section>
-
-    <!-- Map -->
-    <section class="bg-light text-center">
-        <div class="container">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to add google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-        </div>
-    </section>
-
-    <!-- Main Contact -->
-    <section class="bg-light text-center">
-        <div class="container">
-            <div class="row text-center py-4 g-4 justify-content-between align-items-center">
-                <div class="col-lg text-light">
-                    <div class="row p-3 justify-content-center align-items-center">
-                        <div class="col-md bg-black">
-                            <h3><i class="bi bi-geo-alt"></i> Visit Us: </h3>
-                        </div>
-                        <div class="bg-dark">
-                            <p class="bg-dark">1314 Kingston Highway
-                                Kingston, TN 37763
-                                USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg text-light">
-                    <div class="row p-3 justify-content-center align-items-center">
-                        <div class="col-md bg-black">
-                            <h3><i class="bi bi-telephone"></i> Call Us: </h3>
-                        </div>
-                        <div class="bg-dark">
-                            <p class="bg-dark"><a class="link-light" href="tel:08138143732">+234-813-814-3732</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg text-light">
-                    <div class="row p-3 justify-content-center align-items-center">
-                        <div class="col-md bg-black">
-                            <h3><i class="bi bi-envelope"></i> Email Us: </h3>
-                        </div>
-                        <div class="bg-dark">
-                            <p class="bg-dark"><a class="link-light" href="mailto:adekoyaadedire@gmail.com">adekoyaadedire@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <!-- Main Footer -->
-  <section class="p-5 bg-black text-center text-white">
-    <div class="container main-footer">
-        <div class="row justify-content-between">
-            <div class="col-md">
-                <h4 class="mb-4">About</h4>
-                <h2>PLUMBING</h2>
-                <div>
-                    <p class="mb-1"><i class="bi bi-geo-alt"></i> 1314 Kingston Highway
-                        Kingston, TN 37763
-                        USA</p>
-                    <p class="mb-1"><i class="bi bi-telephone"></i><a href="tel:08138143732"> +234-813-814-3732</a></p>
-                    <p class="mb-1"><i class="bi bi-envelope"></i><a href="mailto:adekoyaadedire@gmail.com"> adekoyaadedire@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="col-md">
-                <h4 class="mb-4">Quick Links</h4>
-                <p class="mb-1"><a href="services.html">All Services</a></p>
-                <p class="mb-1"><a href="#" data-bs-toggle="modal" data-bs-target="#appointment">Appointment</a></p>
-                <p class="mb-1"><a href="contact.html">Contact Us</a></p>
-                <p class="mb-1"><a href="#services">Plumbing Services</a></p>
-                <p class="mb-1"><a href="about.html">About Us</a></p>
-                <!-- <p class="mb-1"><a href="#">Plumbing Services</a></p> -->
-        </div>
-            <div class="col-md">
-                <h4 class="mb-4">Services</h4>
-                <p class="mb-1"><a href="services.html">Sewer Repair and Cleaning</a></p>
-                <p class="mb-1"><a href="services.html">Faucet and Leak Repairs</a></p>
-                <p class="mb-1"><a href="services.html">Remodelling Service</a></p>
-                <p class="mb-1"><a href="services.html">Plumbing Services</a></p>
-                <p class="mb-1"><a href="services.html">Drain Cleaning and Repairs</a></p>
-        </div>
-    </div>
-</section>
 
       <!-- Footer 2 -->
     <section class="p-2 bg-dark text-center text-white position-relative">
@@ -343,3 +298,4 @@
 
     <script src="vendor\bootstrap\js\bootstrap.bundle.min.js"></script>
 </body>
+</html>
