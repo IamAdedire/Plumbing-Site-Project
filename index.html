@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fonts\bootstrap-icons\bootstrap-icons.css">
     <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
 </head>
-<body>
+<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="position: relative;">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container navigation">
@@ -23,10 +23,13 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">HOME</a>
+                        <a href="index.html" class="nav-link active" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="#services" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#copy3" class="nav-link d-none">Hidden</a>
                     </li>
                     <li class="nav-item">
                         <a href="faq.html" class="nav-link">FAQ</a>
@@ -180,9 +183,9 @@
               </div>
           </div>
       </section>
-      
+
       <!-- Third Copy -->
-      <section class="p-md-5 py-5 p-lg-4 bg-dark text-light text-center text-md-start">
+      <section class="p-md-5 py-5 p-lg-4 bg-dark text-light text-center text-md-start" id="copy3">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md py-5 p-md-5">
