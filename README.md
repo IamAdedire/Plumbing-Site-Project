@@ -1,2 +1,2 @@
 # Plumbing Site Project
- A simple side project I plan on selling.
+ A very random mediocre side-project.
